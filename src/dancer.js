@@ -5,9 +5,9 @@ var makeDancer = function (top, left, timeBetweenSteps) {
 
 
   // use jQuery to create an HTML <span> tag
-  this.$node = $('<span class="dancer"></span>');
+  this.$node = $('<span class="dancer"><img src="TrumpWindshield.gif" alt="Trump" style="width:500px;height:200px;"></img></span>');
   this.timeBetweenSteps = timeBetweenSteps;
-  debugger;
+  //debugger;
   this.step();
 
 
@@ -35,4 +35,8 @@ makeDancer.prototype.setPosition = function (top, left) {
     left: left
   };
   this.$node.css(styleSettings);
+};
+
+makeDancer.prototype.lineup = function(top, left) {
+  this.setPosition(top, left);
 };
