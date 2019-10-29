@@ -28,3 +28,18 @@ body, a:link, a:visited, a:active{
   /* border-radius:10px;   */
   position:absolute;
 }
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 72%;}
+}
+@keyframes bouncing{
+  0%  { bottom: 0; box-shadow: 0 0 px rgba(0,0,0,0.5);}
+  100%{ bottom: 50px; box-shadow: 0 0px 0px rgba(0,0,0,0.1);}
+}
+
+/* .blinky{ animation: bouncing 0.5s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both;} */
+
+.breakDancer {
+  animation: mymove 5s infinite;
+ }

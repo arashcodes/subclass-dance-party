@@ -7,7 +7,9 @@ var makeBlinkyDancer = function (top, left, timeBetweenSteps) {
   //this.oldStep = this.step;
 
   //return blinkyDancer;
-  this.$node = $('<span class="dancer"><img src="bobsburger.gif" alt="Homer" style="width:150px;height:200px;"></img></span>');
+  this.$node = $('<span class="blinky dancer"><img src="bobsburger.gif" alt="Homer" style="width:150px;height:200px;"></img></span>');
+  this.setPosition(top, left);
+
 };
 makeBlinkyDancer.prototype = Object.create(makeDancer.prototype);
 makeBlinkyDancer.prototype.constructor = makeBlinkyDancer;
