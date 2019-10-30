@@ -31,6 +31,9 @@ $(document).ready(function() {
 
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
+    if(dancer.$nodeStatic) {
+      $('body').append(dancer.$nodeStatic);
+    }
   });
 
   $('.lineUpButton').on('click', function(event) {
